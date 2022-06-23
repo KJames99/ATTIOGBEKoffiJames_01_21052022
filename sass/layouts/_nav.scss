@@ -1,0 +1,66 @@
+.home__navbar {
+
+	&__one {
+		@extend %flex--justify-between;
+		padding: 20px;
+
+		&__nav__ul {
+			@extend %flex--justify-between;
+			padding: 0;
+			
+			&__li {
+				@extend %display--inline;
+				@extend %text--uppercase;
+				margin: 5px 10px;
+
+				a {
+					color: white;
+				}
+			}
+		}
+
+		@include medium-only {
+			display: none;
+		}
+
+		@include small-only {
+			display: none;
+		}
+	}
+
+	&__two {
+		display: none;
+
+		@include medium-only {
+			display: flex;
+			background-color: rgba(white,.9);
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 3%;
+		}
+
+		@include small-only {
+			display: none;
+		}
+
+		i {
+			color: black;
+		}
+	}
+
+	&__three {
+		display: none;
+
+		@include small-only {
+			display: flex;
+			background-color: rgba(white,.9);
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 3%;
+		}
+
+		i {
+			color: black;
+		}
+	}
+}
