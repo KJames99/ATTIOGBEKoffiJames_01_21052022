@@ -272,4 +272,35 @@ section {
 		color: white;
 		padding: 7%;
 	}
+
+	&#news {
+		@extend %mt--100;
+
+		.card {
+			&__title {
+				margin: 0;
+			}
+
+			&__description {
+				height: 120px;
+
+				&__content {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+
+			&:hover {
+				.card__description {
+					height: 100%;
+				}
+
+				i.fa {
+					display: block;
+					font-size: 40px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
 }
