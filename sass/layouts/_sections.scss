@@ -1,0 +1,82 @@
+section {
+	@extend %text--center;
+
+	span.subtitle {
+		@extend %font2;
+		margin-bottom: 50px;
+	}
+
+	&#about {
+		@extend %mt--100;
+
+		.about {
+			&__chef {
+				@extend %flex--justify-around;
+
+				&__message {
+					@extend %flex--2;
+
+					&__paragraph {
+						@extend %font1;
+						@extend %text--italic;
+						margin: 50px 0;
+						font-size: 18px;
+						font-weight: 200;
+					}
+
+					&__signature {
+						@extend %font4;
+						font-size: 50px;
+						transform: rotate(345deg);
+						margin-bottom: 100px;
+					}
+				}
+
+				&__photo {
+					@extend %flex--2;
+
+					@include small-only {
+						display: none;
+					}
+				}
+			}
+
+			&__food {
+				@extend %flex--justify-between;
+				
+				@include small-only {
+					flex-wrap: wrap;
+				}
+
+				&__column {
+					@extend %flex--3;
+
+					@include small-only {
+						flex: 100%;
+					}
+
+					&__text {
+						@extend %flex--align-center;
+						@extend %flex--3;
+						background-image: url("../img/home3/center-intro.jpg");
+
+						@include small-only {
+							flex: 100%;
+						}
+
+						.container {
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
+
+						&__intro__paragraph {
+							@include medium-only {
+								line-height: 150%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
