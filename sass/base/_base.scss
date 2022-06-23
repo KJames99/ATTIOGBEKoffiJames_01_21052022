@@ -1,0 +1,96 @@
+::selection {
+	background-color: $primary;
+	color: white;
+}
+
+h1 {
+	font-size: 52px;
+
+	@include small-only {
+		font-size: 42px;
+	}
+}
+
+h2 {
+	font-size: 48px;
+
+	@include small-only {
+		font-size: 38px;
+	}
+}
+
+h3 {
+	font-size: 34px;
+
+	@include small-only {
+		font-size: 24px;
+	}
+}
+
+h1, h2, h3 {
+	@extend %text--uppercase;
+	@extend %font3;
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+body {
+	max-width: 1441px;
+	margin: auto;
+
+	&, p{
+		@extend %font1;
+		line-height: 28px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+
+	&:active {
+		color: $primary;
+	}
+}
+
+.overlay {
+	background-color: rgba(black,0.5);
+	height: 100%;
+}
+
+.img {
+	width: auto;
+
+	&--w100 {
+		width: 100%;
+	}
+
+	&--h100 {
+		height: 100%;
+	}
+}
+
+.p-3 {
+	padding: 3%;
+}
+
+.pb-5 {
+	padding-bottom: 5%;
+}
+
+i.icon {
+	&-home-ico, &-intro {
+		font-size: 35px;
+	}
+}
+
+.text {
+	&--primary {
+		color: $primary;
+	}
+
+	&--black {
+		color: black;
+	}
+}
