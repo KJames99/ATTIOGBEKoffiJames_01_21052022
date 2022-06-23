@@ -4,8 +4,8 @@
 	"description": "Projet de la formation Nextboxx concernant l'apprentissage de SASS, pendant la formation Nextboxx",
 	"main": "index.js",
 	"scripts": {
-		"sass": "sass --watch ./sass/main.scss:./public/css/custom.css",
-		"prefix": "postcss ./public/css/custom.css --use autoprefixer -d ./public/css"
+		"sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+		"prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/"
 	},
 	"repository": {
 		"type": "git",
