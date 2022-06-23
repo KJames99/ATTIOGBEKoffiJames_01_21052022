@@ -263,4 +263,13 @@ section {
 			}
 		}
 	}
+
+	&#reservation {
+		@extend %mt--100;
+		background-image: url("../img/background/bg_8.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		color: white;
+		padding: 7%;
+	}
 }
