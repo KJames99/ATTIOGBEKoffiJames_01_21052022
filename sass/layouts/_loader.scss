@@ -1,0 +1,63 @@
+div#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: $primary;
+	z-index: 999;
+	animation: preloader 0s ease-in 5s forwards;
+	@extend %flex--align-center;
+	@extend %flex--justify-around;
+
+	.preloader {
+		&__items__spinner {
+			position: relative;
+			@extend %text--center;
+			width: 40px;
+			height: 40px;
+			margin: 40px auto 0;
+			animation: spinner_rotation 2s infinite linear;
+
+			&__dot1, &__dot2 {
+				width: 60%;
+				height: 60%;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				background-color: white;
+				border-radius: 100%;
+				animation: dot_scale 2s infinite ease-in-out;
+			}
+
+			&__dot2 {
+				top: auto;
+				bottom: 0;
+				animation-delay: -1s;
+			}
+		}
+	}
+}
+
+@keyframes preloader {
+	100% {
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+}
+
+@keyframes spinner_rotation {
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+@keyframes dot_scale {
+	0%, 100% {
+		transform:scale(0);
+	}
+	50% {
+		transform:scale(1);
+	}
+}
