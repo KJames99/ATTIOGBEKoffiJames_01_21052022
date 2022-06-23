@@ -117,4 +117,94 @@ section {
 			}
 		}
 	}
+
+	&#service {
+		@extend %mt--100;
+
+		.service {
+			&__food{
+				background-image: url("../img/background/bg_4.jpg");
+				background-size: cover;
+				background-attachment: fixed;
+				color: white;
+				padding: 7% 0;
+
+				&__types {
+					& > .row .card {
+						flex: 14.648%;
+
+						@include medium-only {
+							flex: 38.38%;
+						}
+
+						@include small-only {
+							flex: 100%;
+						}
+					}
+				}
+			}
+
+			&__offers {
+				@extend %mt--100;
+			}
+
+			&__app {
+				@extend %mt--100;
+				background-image: url("../img/background/bg_11.jpg");
+				background-size: cover;
+				background-attachment: fixed;
+				color: white;
+				text-align: left;
+				height: 570px;
+
+				// @include small_mobile-only {
+				// 	height: 600px;	
+				// }
+
+				&__container {
+					@extend %flex;
+
+					@include small-only {
+						text-align: center;
+						height: 100%;
+					}
+
+					&__image{
+						@extend %flex--2;
+						margin-top: 60px;
+
+						@include small-only {
+							display: none;
+						}
+
+						img {
+							@include medium-only {
+								width: 100%;
+							}
+						}
+					}
+
+					&__description {
+						@extend %flex--align-center;
+						@extend %flex--2;
+
+						.content {
+							h2 {
+								font-size: 35px;
+
+								@include medium-only {
+									line-height: 40px;
+								}
+							}
+
+							p {
+								@extend %font3;
+								@extend %text--italic;
+							}
+						}
+					}
+				}
+			} 
+		}
+	}
 }
