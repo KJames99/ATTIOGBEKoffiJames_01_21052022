@@ -79,4 +79,42 @@ section {
 			}
 		}
 	}
+
+	&#team {
+		@extend %mt--100;
+
+		.team__carousel {
+			@extend %flex--justify-around;
+			// width: 200%;
+			// transition: 3s;
+			
+			.row {
+				// background-color: #cecece;
+				// width: calc(100% / 2 - 10px);
+				// margin: 0 20px;
+
+				.card {
+					.card__description.card__description-overlay {
+						justify-content: space-evenly;
+
+						& > a i.fa {
+							font-size: 30px;
+						}
+					}
+
+					&:nth-child(2) {
+						@include medium-only {
+							display: none;
+						}
+					}
+
+					&:nth-child(3) {
+						@include small-only {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }
