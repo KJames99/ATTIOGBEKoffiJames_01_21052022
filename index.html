@@ -719,7 +719,49 @@
 			</section>
 
 			<section id="reservation">
-				
+				<div class="container">
+					<i class="icon-intro"></i>
+					<h2 class="reservation__title">RESERVATION</h2>
+					<span class="subtitle">Book your table</span>
+					<form>
+						<div class="reservation__form">
+							<div class="reservation__form__text-inputs">
+								<div class="reservation__form__text-inputs__column">
+									<input name="name2" class="form-control" type="text" placeholder="Your Name *" required>
+									<select class="form-control" name="occasion">
+										<option value="one">Occasion *</option>
+										<option value="d">One</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+										<option value="four">Four</option>
+										<option value="five">Five</option>
+									</select>
+									<input name="branch" class="form-control" type="text" placeholder="Branch Name *" required>
+									<input name="phone" class="form-control" type="tel" placeholder="Phone No.">
+								</div>
+
+								<div class="reservation__form__text-inputs__column">
+									<input name="email2" class="form-control" type="email" placeholder="email" >
+									<select class="form-control" name="food">
+										<option value="one">Preferred food *</option>
+										<option value="d">One</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+										<option value="four">Four</option>
+										<option value="five">Five</option>
+									</select>
+									<input name="personnum" class="form-control" type="text" placeholder="Number of Persons" >
+									<input name="date" class="form-control" id="datetimepicker" placeholder="Date" type="text" >
+									<i class="fa fa-calendar"></i>
+								</div>
+							</div>
+							<div class="reservation__form__message">
+								<textarea name="comment2" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<button class="btn btn--primary--outline" name="submit" value="Send" id="reser-submit">BOOK YOUR TABLE</button>
+					</form>
+				</div>
 			</section>
 
 			<section id="news">
