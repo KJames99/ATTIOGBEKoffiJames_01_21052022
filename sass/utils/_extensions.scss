@@ -1,0 +1,78 @@
+%font1 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+%font2 {
+	font-family: 'Courgette', cursive !important;
+}
+
+%font3 {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+%font4 {
+	font-family: 'Herr Von Muellerhoff', cursive;
+}
+
+%text--uppercase {
+	text-transform: uppercase;
+}
+
+%text--center {
+	text-align: center;
+}
+
+%text--italic {
+	font-style: italic;
+}
+
+%display--inline {
+	display: inline;
+}
+
+%mt--100 {
+	margin-top: 100px;
+}
+
+%mb--50 {
+	margin-bottom: 50px;
+}
+
+%flex {
+	display: flex;
+
+	&--justify-between {
+		@extend %flex;
+		justify-content: space-between;
+	}
+
+	&--justify-around {
+		@extend %flex;
+		justify-content: space-around;
+	}
+
+	&--align-center {
+		@extend %flex;
+		align-items: center;
+	}
+
+	&--1 {
+		flex: 100%;
+	}
+
+	&--2 {
+		flex: 50%;
+	}
+
+	&--3 {
+		flex: 29%;
+	}
+
+	&--4 {
+		flex: 25%;
+	}
+
+	&--wrap {
+		flex-wrap: wrap;
+	}
+}
