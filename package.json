@@ -1,0 +1,21 @@
+{
+	"name": "nextboxx-sass-project",
+	"version": "1.0.0",
+	"description": "Projet de la formation Nextboxx concernant l'apprentissage de SASS, pendant la formation Nextboxx",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+		"prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KJames99/ATTIOGBEKoffiJames_02_21052022.git"
+	},
+	"author": "James",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/KJames99/ATTIOGBEKoffiJames_02_21052022/issues"
+	},
+	"homepage": "https://github.com/KJames99/ATTIOGBEKoffiJames_02_21052022#readme",
+	"browserslist": "last 4 versions"
+}
