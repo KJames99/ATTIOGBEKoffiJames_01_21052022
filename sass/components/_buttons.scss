@@ -1,0 +1,47 @@
+.btn {
+	text-align: center;
+	display: inline-block;
+	@extend %text--uppercase;
+	border-radius: 10px;
+	padding: 5px 30px;
+	font-size: 13px;
+	transition: all 0.3s;
+	// color: white;
+
+	&--primary {
+		background-color: $primary;
+		border: 1px solid $primary;
+	
+		&--outline {
+			border: 2px solid $primary;
+
+			&:hover {
+				background-color: $primary;
+			}
+		}
+	}
+
+	&--red {
+		background-color: red;
+	}
+
+	&--small {
+		padding: 8px 15px;
+		font-size: 10px;
+		line-height: 3px;
+	}
+
+	&--rounded {
+		border-radius: 30px;
+	}
+}
+
+.badge {
+	position: absolute;
+	top: 3%;
+	right: 3%;
+	opacity: 1;
+	visibility: visible;
+	text-transform: capitalize;
+	transition: visibility 0s, opacity .5s ease;
+}
