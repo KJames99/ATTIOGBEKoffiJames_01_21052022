@@ -1,0 +1,63 @@
+header {
+	background-image: url("../img/background/bg_17.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	height: 100vh;
+	min-height: 450px;
+	
+	.home__text {
+		margin-top: 30vh;
+
+		@include medium-only {
+			margin-top: 37vh;
+		}
+
+		@include small-only {
+			margin-top: 37vh;
+		}
+		
+		&__title span {
+			position: absolute;
+			top: 40%;
+			left: 0;
+			width: 100%;
+			opacity: 0;
+			animation: titleRotation 9s linear infinite 0s;
+			
+			&:nth-child(2) {
+				animation-delay: 3s;
+			}
+
+			&:nth-child(3) {
+				animation-delay: 6s;
+			}
+		}
+	}
+
+	p.home__text__desc {
+		@extend %font2;
+		font-size: 18px;
+		@extend %text--italic;
+	}
+}
+
+@keyframes titleRotation {
+	0% { 
+		opacity: 0; 
+		animation-timing-function: ease-in;
+	}
+
+	5% { 
+		opacity: 1; 
+		animation-timing-function: ease-out;
+	}
+
+	40% { 
+		opacity: 0; 
+	}
+
+	100% { 
+		opacity: 0; 
+	}
+}
