@@ -1,0 +1,173 @@
+footer {
+	@extend %mt--100;
+	color: white;
+	background-color: #191919;
+
+	& div.container {
+		@extend %flex;
+		padding-bottom: 30px;
+
+		@include medium-only {
+			flex-wrap: wrap;
+		}
+
+		@include small-only {
+			flex-wrap: wrap;
+		}
+	}
+
+	.footer {
+		&__location {
+			@extend %flex--4;
+			margin-right: 5px;
+
+			@include medium-only {
+				flex: 40%;
+			}
+
+			@include small-only {
+				flex: 100%;
+			}
+
+			&__paragraph {
+
+				& p {
+					margin-bottom: 0;
+				}
+			}
+
+			& > ul {
+				list-style: none;
+				padding: 0;
+				
+				& > li {
+					display: inline-block;
+
+					& > a {
+						width: 35px;
+						height: 35px;
+						background-color: #3f3f3f;
+						padding: 7px;
+						margin: 0 5px;
+						border-radius: 50%;
+						@extend %text--center;
+						line-height: 35px;
+
+						&.fa {
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+
+		&__title {
+			font-size: 24px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		
+		&__latest-posts {
+			@extend %flex--4;
+			margin-right: 5px;
+
+			@include medium-only {
+				flex: 40%;
+			}
+
+			@include small-only {
+				flex: 100%;
+				margin-right: 0;
+			}
+
+			.row {
+				justify-content: flex-start;
+			}
+			
+			&__post {
+				@extend %flex--justify-between;
+				margin-bottom: 10px;
+
+				&__description {
+					@extend %flex--2;
+					margin-left: 10px;
+
+					&__title, &__paragraph {
+						margin: 0;
+					}
+
+					&__paragraph {
+						line-height: 15px;
+						margin-bottom: 5px;
+					}
+				}
+
+				& > img {
+					@extend %flex--2;
+				}
+			}
+		}
+
+		&__openning {
+			@extend %flex--4;
+			margin-right: 5px;
+
+			@include medium-only {
+				flex: 40%;
+				margin-right: 0;
+			}
+
+			@include small-only {
+				flex: 100%;
+				margin-right: 0;
+			}
+
+			&__times {
+				@extend %flex;
+
+				&__days, &__times {
+					@extend %flex--2;
+				}
+
+				&__times {
+					padding-right: 30px;
+					text-align: end;
+				}
+
+				& p {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__photos {
+			@extend %flex--4;
+
+			@include medium-only {
+				flex: 40%;
+			}
+
+			@include small-only {
+				flex: 100%;
+			}
+		}
+
+		&__logo {
+			display: block;
+			background-color: #101010;
+			@extend %text--center;
+			padding: 20px 0;
+			margin-top: 30px;
+		}
+	}
+
+	p, span {
+		font-size: 13px;
+		color: #7a7a7a;
+	}
+
+	span {
+		color: #fff;
+	}
+}
