@@ -207,4 +207,60 @@ section {
 			} 
 		}
 	}
+
+	&#menu {
+		@extend %mt--100;
+
+		.menu {
+			&__column {
+				margin: 0 30%;
+
+				@include small-only {
+					margin: 0 5%;
+				}
+			}
+			
+			&__starter {
+				@extend %mt--100;
+
+				&__header{
+					background-image: url("../img/menu/bg1.jpg");
+					@extend %mb--50;
+
+					&__title {
+						padding: 4%;
+						color: white;
+					}		
+				}
+			}
+
+			&__dishes {
+				@extend %mt--100;
+
+				&__header{
+					background-image: url("../img/menu/bg2.jpg");
+					@extend %mb--50;
+
+					&__title {
+						padding: 4%;
+						color: white;
+					}		
+				}
+			}
+
+			&__desert {
+				@extend %mt--100;
+
+				&__header{
+					background-image: url("../img/menu/bg3.jpg");
+					@extend %mb--50;
+
+					&__title {
+						padding: 4%;
+						color: white;
+					}
+				}
+			}
+		}
+	}
 }
