@@ -1,0 +1,126 @@
+form {
+	position: relative;
+	margin-top: 50px;
+
+	.reservation__form {
+		@extend %flex--justify-between;
+		position: relative;
+
+		@include medium-only {
+			flex-wrap: wrap;
+		}
+
+		@include small-only {
+			flex-wrap: wrap;
+		}
+
+		&__text-inputs {
+			@extend %flex--justify-between;
+			@extend %flex--2;
+
+			@include medium-only {
+				flex: 100%;
+			}
+
+			@include small-only {
+				flex-wrap: wrap;
+			}
+
+			&__column {
+				position: relative;
+				@extend %flex--2;
+
+				@include small-only {
+					flex: 100%;
+				}
+			}
+		}
+
+		&__message {
+			@extend %flex--2;
+
+			@include medium-only {
+				margin-bottom: 50px;
+			}
+
+			@include small-only {
+				flex: 100%;
+				margin-bottom: 90px;
+			}
+		}
+	}
+
+	input, textarea, select {
+		border: 2px solid white;
+		border-radius: 10px;
+		font-size: 15px;
+		@extend %text--uppercase;
+		background-color: transparent;
+		color: white;
+		width: 80%;
+		padding: 5px 10px;
+
+		&.form-control {
+			margin-bottom: 30px;
+		}
+
+		&::placeholder {
+			color: white;
+		}
+	}
+
+	input {
+		@include small-only {
+			width: 90%;
+		}
+	}
+
+	select {
+		width: 92.4%;
+
+		@include medium-only {
+			width: 86.4%;
+		}
+
+		@include small-only {
+			width: 94.134%;
+		}
+		
+		option {
+			color: black;
+		}
+	}
+
+	textarea {
+		height: 83%;
+
+		@include medium-only {
+			width: 90%;
+			height: 170%;
+		}
+
+		@include small-only {
+			width: 90%;
+			height: 170%;
+		}
+	}
+
+	button {
+		background-color: transparent;
+		color: white;
+
+		@include medium-only {
+			margin-top: 30px;
+		}
+	}
+
+	i.fa.fa-calendar {
+		position: absolute;
+		left: 85%;
+		top: 78%;
+
+		@include small-only {
+			left: 90%;
+		}
+	}
+}
