@@ -50,6 +50,71 @@ form {
 		}
 	}
 
+	.contact__form {
+		@extend %flex--justify-around;
+		position: relative;
+
+		@include small-only {
+			flex-wrap: wrap;
+		}
+
+		&__text-inputs {
+			@extend %flex--2;
+
+			@include small-only {
+				flex: 100%;
+			}
+
+		}
+
+		&__message {
+			@extend %flex--2;
+
+			@include small-only {
+				flex: 100%;
+				margin-bottom: 90px;
+			}
+		}
+
+		input, textarea {
+			border: 2px solid gray;
+			border-radius: 10px;
+			font-size: 15px;
+			@extend %text--uppercase;
+			background-color: transparent;
+			color: gray;
+			width: 80%;
+			padding: 5px 10px;
+
+			&.form-control {
+				margin-bottom: 30px;
+			}
+
+			&::placeholder {
+				color: gray;
+			}
+		}
+
+		input {
+			@include small-only {
+				width: 90%;
+			}
+		}
+
+		textarea {
+			height: 74%;
+
+			@include small-only {
+				width: 90%;
+				height: 170%;
+			}
+		}
+
+		& + button {
+			margin-top: 0;
+		}
+	}
+
 	input, textarea, select {
 		border: 2px solid white;
 		border-radius: 10px;

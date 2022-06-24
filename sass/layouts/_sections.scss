@@ -294,4 +294,13 @@ section {
 			}
 		}
 	}
+
+	&#contact {
+		@extend %mt--100;
+
+		.contact__description {
+			margin-left: 25%;
+			margin-right: 25%;
+		}
+	}
 }
