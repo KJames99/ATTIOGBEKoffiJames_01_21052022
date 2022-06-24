@@ -1,8 +1,5 @@
 header {
-	background-image: url("../img/background/bg_17.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	color: white;
+	@include cover_background("../img/background/bg_17.jpg");
 	height: 100vh;
 	min-height: 450px;
 	

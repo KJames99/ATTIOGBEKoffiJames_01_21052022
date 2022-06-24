@@ -1,3 +1,10 @@
+@mixin cover_background($background) {
+	background-image: url($background);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
 @mixin medium-only {
 	@media screen and (min-width: map-get($breakpoints, small)) and (max-width: calc(map-get($breakpoints, medium) - 1px)) {
 		@content;

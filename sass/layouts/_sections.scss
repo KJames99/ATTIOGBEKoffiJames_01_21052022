@@ -103,12 +103,16 @@ section {
 					}
 
 					&:nth-child(2) {
-						@include medium-only {
+						@include small-only {
 							display: none;
 						}
 					}
 
 					&:nth-child(3) {
+						@include medium-only {
+							display: none;
+						}
+
 						@include small-only {
 							display: none;
 						}
@@ -123,10 +127,7 @@ section {
 
 		.service {
 			&__food{
-				background-image: url("../img/background/bg_4.jpg");
-				background-size: cover;
-				background-attachment: fixed;
-				color: white;
+				@include cover_background("../img/background/bg_4.jpg");
 				padding: 7% 0;
 
 				&__types {
@@ -150,16 +151,9 @@ section {
 
 			&__app {
 				@extend %mt--100;
-				background-image: url("../img/background/bg_11.jpg");
-				background-size: cover;
-				background-attachment: fixed;
-				color: white;
+				@include cover_background("../img/background/bg_11.jpg");
 				text-align: left;
 				height: 570px;
-
-				// @include small_mobile-only {
-				// 	height: 600px;	
-				// }
 
 				&__container {
 					@extend %flex;
@@ -266,10 +260,7 @@ section {
 
 	&#reservation {
 		@extend %mt--100;
-		background-image: url("../img/background/bg_8.jpg");
-		background-size: cover;
-		background-attachment: fixed;
-		color: white;
+		@include cover_background("../img/background/bg_8.jpg");
 		padding: 7%;
 	}
 
